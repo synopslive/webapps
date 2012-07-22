@@ -1,0 +1,57 @@
+# Local settings ; copy this file to local_settings.py (removing .dist)
+
+import os
+
+# Debug flags
+DEBUG = True
+TEMPLATE_DEBUG = True
+
+# Environment root
+ENV_ROOT = os.path.abspath(os.path.dirname(__file__))
+
+# Project root
+PROJECT_ROOT = os.path.abspath(os.path.dirname(__file__) + '/../../')
+
+# Admins
+ADMINS = (
+    ('Signez', 'signez@stanisoft.net'),
+)
+
+# Database settings
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2', # Database driver
+        'NAME': '',                                         # Database name
+        'USER': '',                                         # Database user login
+        'PASSWORD': '',                                     # Database user password
+        'HOST': '',                                         # Database host
+        'PORT': '',                                         # Database port
+    }
+}
+
+# Absolute filesystem path to the directory that will hold user-uploaded files.
+# Example: "/home/media/media.lawrence.com/media/"
+MEDIA_ROOT = ENV_ROOT + "/public/deck/ups/"
+
+# URL that handles the media served from MEDIA_ROOT. Make sure to use a
+# trailing slash.
+# Examples: "http://media.lawrence.com/media/", "http://example.com/media/"
+MEDIA_URL = 'http://synopslive.net/static/public/deck/ups/'
+
+# Absolute path to the directory static files should be collected to.
+# Don't put anything in this directory yourself; store your static files
+# in apps' "static/" subdirectories and in STATICFILES_DIRS.
+# Example: "/home/media/media.lawrence.com/static/"
+STATIC_ROOT = ENV_ROOT + "/static/"
+
+# URL prefix for static files.
+# Example: "http://media.lawrence.com/static/"
+STATIC_URL = '/static/'
+
+# URL prefix for admin static files -- CSS, JavaScript and images.
+# Make sure to use a trailing slash.
+# Examples: "http://foo.com/static/admin/", "/static/admin/".
+ADMIN_MEDIA_PREFIX = '/static/admin/'
+
+# Make this unique, and don't share it with anybody.
+SECRET_KEY = '(^@vt6lcd)8c!vo5j9*ki@-_56!!@=uyglocph1ithhk(5^7a5'

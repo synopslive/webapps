@@ -1,0 +1,22 @@
+# Python virtual environnments
+.virtualenv
+
+# Apps (you should use fabric and fabfile to install them)
+deck
+deck/*
+dradis
+dradis/*
+
+# Python/Django related
+*.pyc
+*.pot
+*.log
+
+# Environnment cache
+envs/main/static/CACHE/
+
+# Local settings (you should copy .dist to .py)
+local_settings.py
+
+# Other stuff (editors, etc.)
+.idea
