@@ -53,5 +53,7 @@ STATIC_URL = '/static/'
 # Examples: "http://foo.com/static/admin/", "/static/admin/".
 ADMIN_MEDIA_PREFIX = '/static/admin/'
 
+LESS_LOCATION = '/usr/local/bin/lessc'
+
 # Make this unique, and don't share it with anybody.
 SECRET_KEY = '(^@vt6lcd)8c!vo5j9*ki@-_56!!@=uyglocph1ithhk(5^7a5'

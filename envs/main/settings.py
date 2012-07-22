@@ -78,7 +78,7 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.messages.middleware.MessageMiddleware',
 )
 
-ROOT_URLCONF = 'urls'
+ROOT_URLCONF = 'envs.main.urls'
 
 INSTALLED_APPS = (
     'django.contrib.auth',
@@ -98,7 +98,7 @@ INSTALLED_APPS = (
 )
 
 COMPRESS_PRECOMPILERS = (
-    ('text/less', 'lessc {infile} {outfile}'),
+    ('text/less', local_settings.LESS_LOCATION + ' {infile} {outfile}'),
 )
 
 COMPRESS_CSS_FILTERS = ('compressor.filters.css_default.CssAbsoluteFilter', )
