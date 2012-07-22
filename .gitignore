@@ -13,7 +13,7 @@ dradis/*
 *.log
 
 # Environnment cache
-envs/main/static/CACHE/
+envs/main/static/
 
 # Local settings (you should copy .dist to .py)
 local_settings.py
