@@ -56,4 +56,4 @@ ADMIN_MEDIA_PREFIX = '/static/admin/'
 LESS_LOCATION = '/usr/local/bin/lessc'
 
 # Make this unique, and don't share it with anybody.
-SECRET_KEY = 'I'm not a secret anymore :( Change me right now !'
+SECRET_KEY = 'I\'m not a secret anymore :( Change me right now !'
