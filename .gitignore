@@ -20,3 +20,5 @@ local_settings.py
 
 # Other stuff (editors, etc.)
 .idea
+fabfile.py
+generate_virtualenv.sh
