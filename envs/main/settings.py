@@ -90,12 +90,11 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'django.contrib.redirects',
     'django.contrib.admin',
+    'django.contrib.admindocs',
     'south',
     'compressor',
     'deck',
     'dradis'
-    # Uncomment the next line to enable admin documentation:
-    # 'django.contrib.admindocs',
 )
 
 COMPRESS_PRECOMPILERS = (
