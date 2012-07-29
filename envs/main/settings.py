@@ -89,12 +89,12 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.redirects',
-    'django.contrib.admin',
-    'django.contrib.admindocs',
     'south',
     'compressor',
     'deck',
-    'dradis'
+    'dradis',
+    'django.contrib.admin',
+    'django.contrib.admindocs',
 )
 
 COMPRESS_PRECOMPILERS = (
