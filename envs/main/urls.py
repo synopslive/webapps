@@ -5,12 +5,6 @@ from django.contrib import admin
 admin.autodiscover()
 
 urlpatterns = patterns('',
-    # Examples:
-    # url(r'^$', 'webapps.views.home', name='home'),
-    # url(r'^webapps/', include('webapps.foo.urls')),
-
-    url(r'^dradis/', include('dradis.urls')),
-
     url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
 
     url(r'^admin/', include(admin.site.urls)),
