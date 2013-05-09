@@ -4,3 +4,7 @@
 
 ROOT_URLCONF = 'envs.dradis.urls'
 
+ADMINS = []
+
+DEBUG = True
+
