@@ -1,17 +1,21 @@
 # Django settings for webapps project.
 import markdown2
-from . import local_settings
 
-DEBUG = local_settings.DEBUG
-TEMPLATE_DEBUG = local_settings.TEMPLATE_DEBUG
+DEBUG = False
+TEMPLATE_DEBUG = False
 
-PROJECT_ROOT = local_settings.PROJECT_ROOT
-
-ADMINS = local_settings.ADMINS
-
-DATABASES = local_settings.DATABASES
-
-ALLOWED_HOSTS = local_settings.ALLOWED_HOSTS
+# Set these values in local_settings.py, dude, or it will crash.
+# At end of this file, values from local_settings will override these None.
+PROJECT_ROOT = None
+ADMINS = None
+DATABASES = None
+ALLOWED_HOSTS = None
+MEDIA_ROOT = None
+MEDIA_URL = None
+STATIC_ROOT = None
+STATIC_URL = None
+ADMIN_MEDIA_PREFIX = None
+SECRET_KEY = None
 
 MANAGERS = ADMINS
 
@@ -38,20 +42,9 @@ USE_I18N = True
 # calendars according to the current locale
 USE_L10N = True
 
-MEDIA_ROOT = local_settings.MEDIA_ROOT
-MEDIA_URL = local_settings.MEDIA_URL
-
-STATIC_ROOT = local_settings.STATIC_ROOT
-STATIC_URL = local_settings.STATIC_URL
-
-ADMIN_MEDIA_PREFIX = local_settings.ADMIN_MEDIA_PREFIX
 
 # Additional locations of static files
 STATICFILES_DIRS = (
-    # Put strings here, like "/home/html/static" or "C:/www/django/static".
-    # Always use forward slashes, even on Windows.
-    # Don't forget to use absolute paths, not relative paths.
-
 )
 
 # List of finder classes that know how to find static files in
@@ -62,8 +55,6 @@ STATICFILES_FINDERS = (
     'compressor.finders.CompressorFinder',
 #    'django.contrib.staticfiles.finders.DefaultStorageFinder',
 )
-
-SECRET_KEY = local_settings.SECRET_KEY
 
 # List of callables that know how to import templates from various sources.
 TEMPLATE_LOADERS = (
@@ -99,9 +90,7 @@ INSTALLED_APPS = (
     'django.contrib.admindocs',
 )
 
-COMPRESS_PRECOMPILERS = (
-    ('text/less', local_settings.LESS_LOCATION + ' {infile} {outfile}'),
-)
+LESS_LOCATION = None
 
 COMPRESS_CSS_FILTERS = ('compressor.filters.css_default.CssAbsoluteFilter', )
 
@@ -135,3 +124,18 @@ LOGGING = {
         },
     }
 }
+
+try:
+    from local_settings import *
+except ImportError, exp:
+    pass
+
+COMPRESS_PRECOMPILERS = (
+    ('text/less', LESS_LOCATION + ' {infile} {outfile}'),
+)
+
+try:
+    from env_settings import *
+except ImportError, exp:
+    pass
+
