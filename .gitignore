@@ -2,10 +2,10 @@
 .virtualenv
 
 # Apps (you should use fabric and fabfile to install them)
-deck
-deck/*
-dradis
-dradis/*
+/deck
+/deck/*
+/dradis
+/dradis/*
 
 # Python/Django related
 *.pyc
@@ -14,6 +14,7 @@ dradis/*
 
 # Environnment cache
 envs/main/static/
+envs/dradis/static/
 
 # Local settings (you should copy .dist to .py)
 local_settings.py
