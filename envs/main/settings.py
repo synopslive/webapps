@@ -11,6 +11,8 @@ ADMINS = local_settings.ADMINS
 
 DATABASES = local_settings.DATABASES
 
+ALLOWED_HOSTS = local_settings.ALLOWED_HOSTS
+
 MANAGERS = ADMINS
 
 # Local time zone for this installation. Choices can be found here:
