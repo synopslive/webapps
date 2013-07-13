@@ -4,6 +4,8 @@
 
 ROOT_URLCONF = 'envs.dradis.urls'
 
+LOGIN_URL = '/login/'
+
 ADMINS = []
 
 DEBUG = True
