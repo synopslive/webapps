@@ -57,3 +57,6 @@ LESS_LOCATION = '/usr/local/bin/lessc'
 
 # Make this unique, and don't share it with anybody.
 SECRET_KEY = 'I\'m not a secret anymore :( Change me right now !'
+
+# Something nasty that would identify Dradis.
+SYDROID_API_KEY = ''
