@@ -86,6 +86,7 @@ INSTALLED_APPS = (
     'dradis',
     'django.contrib.admin',
     'django.contrib.admindocs',
+    'django.contrib.flatpages',
 )
 
 LESS_LOCATION = None
