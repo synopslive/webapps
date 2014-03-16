@@ -1,5 +1,5 @@
 Django==1.5.1
-Pillow==1.7.7
+Pillow==2.3.1
 South==0.7.5
 distribute==0.6.24
 django-appconf==0.5
