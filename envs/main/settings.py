@@ -1,6 +1,3 @@
-# Django settings for webapps project.
-import markdown2
-
 DEBUG = False
 TEMPLATE_DEBUG = False
 
@@ -96,10 +93,6 @@ COMPRESS_CSS_FILTERS = ('compressor.filters.css_default.CssAbsoluteFilter', )
 COMPRESS_ENABLED = True
 
 AUTH_PROFILE_MODULE = 'deck.UserProfile'
-
-MARKUP_FIELD_TYPES = (
-    ('markdown', markdown2.markdown),
-)
 
 # A sample logging configuration. The only tangible logging
 # performed by this configuration is to send an email to
