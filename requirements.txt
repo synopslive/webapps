@@ -1,10 +1,12 @@
 Django==1.5.1
 Pillow==2.3.1
 South==0.7.5
+argparse==1.2.1
 distribute==0.6.24
 django-appconf==0.5
 django-compressor==1.1.2
 django-markupfield==1.0.2
+django-modelclone==0.3.0
 django-tastypie==0.11.0
 markdown2==2.0.1
 psycopg2==2.4.5
