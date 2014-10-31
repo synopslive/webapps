@@ -2,6 +2,8 @@
 .virtualenv
 
 # Apps (you should use fabric and fabfile to install them)
+/blog
+/blog/*
 /deck
 /deck/*
 /dradis
